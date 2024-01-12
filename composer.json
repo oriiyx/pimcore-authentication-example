@@ -12,6 +12,7 @@
     },
     "prefer-stable": true,
     "require": {
+        "lexik/jwt-authentication-bundle": "^2.20",
         "pimcore/admin-ui-classic-bundle": "^1.2",
         "pimcore/bundle-generator": "^2.0",
         "pimcore/pimcore": "^11.1",
