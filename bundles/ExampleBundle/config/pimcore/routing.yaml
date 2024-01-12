@@ -1,0 +1,3 @@
+example_homepage:
+    path:     /example
+    defaults: { _controller: ExampleBundle\Controller\DefaultController:indexAction }
