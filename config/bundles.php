@@ -16,4 +16,5 @@ return [
     Pimcore\Bundle\XliffBundle\PimcoreXliffBundle::class => ['all' => true],
     PimcoreBundleGeneratorBundle::class => ['all' => true],
     ExampleBundle\ExampleBundle::class => ['all' => true],
+    Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
 ];
