@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bd91697faeed5457c71a7ece7ef85e1",
+    "content-hash": "dcfe9a8bdcda0e7b27cb2fc4575e5925",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -259,6 +259,68 @@
                 }
             ],
             "time": "2023-12-18T12:05:55+00:00"
+        },
+        {
+            "name": "dachcom-digital/toolbox",
+            "version": "v5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dachcom-digital/pimcore-toolbox.git",
+                "reference": "a9eea3a6a17730d5790290af26da4fde5c322d72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dachcom-digital/pimcore-toolbox/zipball/a9eea3a6a17730d5790290af26da4fde5c322d72",
+                "reference": "a9eea3a6a17730d5790290af26da4fde5c322d72",
+                "shasum": ""
+            },
+            "require": {
+                "pimcore/pimcore": "^11.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^5.0",
+                "codeception/module-symfony": "^3.1",
+                "codeception/module-webdriver": "^4.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-symfony": "^1.0",
+                "symplify/easy-coding-standard": "^9.0"
+            },
+            "type": "pimcore-bundle",
+            "extra": {
+                "pimcore": {
+                    "bundles": [
+                        "ToolboxBundle\\ToolboxBundle"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ToolboxBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DACHCOM.DIGITAL Stefan Hagspiel",
+                    "email": "shagspiel@dachcom.ch",
+                    "homepage": "http://www.dachcom.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pimcore Project Kickstarter",
+            "homepage": "https://github.com/dachcom-digital/pimcore-toolbox",
+            "keywords": [
+                "Toolbox",
+                "pimcore"
+            ],
+            "support": {
+                "issues": "https://github.com/dachcom-digital/pimcore-toolbox/issues",
+                "source": "https://github.com/dachcom-digital/pimcore-toolbox/tree/v5.0.4"
+            },
+            "time": "2024-01-11T07:50:58+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -4365,21 +4427,21 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.3.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "1eeb2536ebb3f8e7f596743ef9a214f582d8cd4a"
+                "reference": "9df500003f0c0fa9d6b33dacf8a7a9f2e0d20a84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/1eeb2536ebb3f8e7f596743ef9a214f582d8cd4a",
-                "reference": "1eeb2536ebb3f8e7f596743ef9a214f582d8cd4a",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/9df500003f0c0fa9d6b33dacf8a7a9f2e0d20a84",
+                "reference": "9df500003f0c0fa9d6b33dacf8a7a9f2e0d20a84",
                 "shasum": ""
             },
             "require": {
                 "cbschuld/browser.php": "^1.9.6",
-                "pimcore/pimcore": "^11.1.3",
+                "pimcore/pimcore": "^11.1.4",
                 "symfony/webpack-encore-bundle": "^1.13.2"
             },
             "require-dev": {
@@ -4410,9 +4472,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.3.1"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.3.2"
             },
-            "time": "2023-12-14T14:35:10+00:00"
+            "time": "2024-01-24T14:42:20+00:00"
         },
         {
             "name": "pimcore/bundle-generator",
@@ -4454,6 +4516,98 @@
                 "source": "https://github.com/pimcore/bundle-generator/tree/v2.0.0"
             },
             "time": "2023-05-03T12:45:56+00:00"
+        },
+        {
+            "name": "pimcore/compatibility-bridge-v10",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pimcore/compatibility-bridge-v10.git",
+                "reference": "598c018fc74f56e6580904db8c7b2ac17375a9af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pimcore/compatibility-bridge-v10/zipball/598c018fc74f56e6580904db8c7b2ac17375a9af",
+                "reference": "598c018fc74f56e6580904db8c7b2ac17375a9af",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "type": "pimcore-bundle",
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Pimcore Compatibility Bridge provides class aliases for the classes which were moved/updated and are necessary for backwards compatibility.",
+            "support": {
+                "issues": "https://github.com/pimcore/compatibility-bridge-v10/issues",
+                "source": "https://github.com/pimcore/compatibility-bridge-v10/tree/v1.0.0"
+            },
+            "time": "2023-04-12T07:23:40+00:00"
+        },
+        {
+            "name": "pimcore/data-hub",
+            "version": "v1.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pimcore/data-hub.git",
+                "reference": "2530a31aa3b0a867e44c60915dca2e2d9b58bffa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pimcore/data-hub/zipball/2530a31aa3b0a867e44c60915dca2e2d9b58bffa",
+                "reference": "2530a31aa3b0a867e44c60915dca2e2d9b58bffa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "pimcore/compatibility-bridge-v10": "^1.0",
+                "pimcore/pimcore": "^10.6.8 || ^11.0.7",
+                "webonyx/graphql-php": "^15.2.3"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.1.12 || ^5.0.3",
+                "codeception/module-asserts": "^2",
+                "codeception/module-symfony": "^1.6.0 || ^3.1.0",
+                "codeception/phpunit-wrapper": "^9",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.6",
+                "symfony/dotenv": "^6.2 || ^5.4.21",
+                "symfony/phpunit-bridge": "^6"
+            },
+            "suggest": {
+                "pimcore/admin-ui-classic-bundle": "Required for Pimcore 11"
+            },
+            "type": "pimcore-bundle",
+            "extra": {
+                "pimcore": {
+                    "bundles": [
+                        "Pimcore\\Bundle\\DataHubBundle\\PimcoreDataHubBundle"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pimcore\\": "core-extension/Pimcore/",
+                    "Pimcore\\Bundle\\DataHubBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Pimcore Datahub",
+            "support": {
+                "issues": "https://github.com/pimcore/data-hub/issues",
+                "source": "https://github.com/pimcore/data-hub/tree/v1.6.5"
+            },
+            "time": "2023-11-13T12:20:59+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -11732,6 +11886,80 @@
                 "source": "https://github.com/umpirsky/country-list/tree/2.0.6"
             },
             "time": "2020-12-03T10:09:09+00:00"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v15.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "d6c965ecbd78cd5260ebc083978562f8c9409d63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/d6c965ecbd78cd5260ebc083978562f8c9409d63",
+                "reference": "d6c965ecbd78cd5260ebc083978562f8c9409d63",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.6",
+                "amphp/http-server": "^2.1",
+                "dms/phpunit-arraysubset-asserts": "dev-master",
+                "ergebnis/composer-normalize": "^2.28",
+                "friendsofphp/php-cs-fixer": "3.48.0",
+                "mll-lab/php-cs-fixer-config": "^5",
+                "nyholm/psr7": "^1.5",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "1.10.57",
+                "phpstan/phpstan-phpunit": "1.3.15",
+                "phpstan/phpstan-strict-rules": "1.5.2",
+                "phpunit/phpunit": "^9.5 || ^10",
+                "psr/http-message": "^1 || ^2",
+                "react/http": "^1.6",
+                "react/promise": "^2.0 || ^3.0",
+                "rector/rector": "^0.19",
+                "symfony/polyfill-php81": "^1.23",
+                "symfony/var-exporter": "^5 || ^6 || ^7",
+                "thecodingmachine/safe": "^1.3 || ^2"
+            },
+            "suggest": {
+                "amphp/http-server": "To leverage async resolving with webserver on AMPHP platform",
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/webonyx/graphql-php/issues",
+                "source": "https://github.com/webonyx/graphql-php/tree/v15.9.1"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-01-25T09:10:40+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",

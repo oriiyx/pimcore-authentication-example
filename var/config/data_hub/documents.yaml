@@ -1,0 +1,84 @@
+pimcore_data_hub:
+    configurations:
+        documents:
+            general:
+                active: true
+                type: graphql
+                name: documents
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1707127718
+                path: null
+                createDate: 1707127674
+            schema:
+                queryEntities: {  }
+                mutationEntities: {  }
+                specialEntities:
+                    document:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    document_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    asset:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset_folder:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset_listing:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    object_folder:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    translation:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    translation_listing:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+            security:
+                method: datahub_apikey
+                apikey:
+                    - 596e210b314463eb58d58847403a76cb
+                skipPermissionCheck: true
+                disableIntrospection: false
+            workspaces:
+                asset: {  }
+                document:
+                    -
+                        read: true
+                        cpath: /
+                        create: false
+                        update: false
+                        delete: false
+                        id: extModel777-1
+                object:
+                    -
+                        read: true
+                        cpath: /
+                        create: false
+                        update: false
+                        delete: false
+                        id: extModel829-1
+            permissions:
+                user: {  }
+                role: {  }
