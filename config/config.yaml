@@ -1,6 +1,7 @@
 imports:
     - { resource: 'local/' }
     - { resource: bundles.yaml }
+    - { resource: 'image_thumbnails/' }
 
 pimcore:
 
@@ -8,3 +9,41 @@ pimcore:
 framework:
 
 
+toolbox:
+    enabled_core_areas:
+        - accordion
+        - anchor
+        - columns
+        - container
+        - content
+        - download
+        - gallery
+        - googleMap
+        - headline
+        - iFrame
+        - image
+        - linkList
+        - parallaxContainer
+        - parallaxContainerSection
+        - separator
+        - slideColumns
+        - snippet
+        - spacer
+        - teaser
+        - video
+
+    theme:
+        layout: !php/const ToolboxBundle\Manager\LayoutManagerInterface::TOOLBOX_LAYOUT_HEADLESS
+        calculators:
+            column_calculator: ToolboxBundle\Calculator\Bootstrap4\ColumnCalculator # or your custom headless calculator
+            slide_calculator: ToolboxBundle\Calculator\Bootstrap4\SlideColumnCalculator
+        headless_documents:
+
+            default_headless_document:
+                areas:
+                    index_headline:
+                        type: area
+                        config:
+                            type: headline
+                    myBlock:
+                        type: areablock

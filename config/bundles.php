@@ -1,6 +1,7 @@
 <?php
 
 use Pimcore\Bundle\BundleGeneratorBundle\PimcoreBundleGeneratorBundle;
+use Pimcore\Bundle\DataHubBundle\PimcoreDataHubBundle;
 
 
 return [
@@ -14,6 +15,8 @@ return [
     Pimcore\Bundle\UuidBundle\PimcoreUuidBundle::class => ['all' => true],
     Pimcore\Bundle\WordExportBundle\PimcoreWordExportBundle::class => ['all' => true],
     Pimcore\Bundle\XliffBundle\PimcoreXliffBundle::class => ['all' => true],
+    PimcoreDataHubBundle::class => ['all' => true],
+    ToolboxBundle\ToolboxBundle::class => ['all' => true],
     PimcoreBundleGeneratorBundle::class => ['all' => true],
     ExampleBundle\ExampleBundle::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
